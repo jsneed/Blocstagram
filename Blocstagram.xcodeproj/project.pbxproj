@@ -19,6 +19,17 @@
 		4B8B7F70197EDA9D004208F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8B7F58197EDA9D004208F6 /* UIKit.framework */; };
 		4B8B7F78197EDA9D004208F6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7F76197EDA9D004208F6 /* InfoPlist.strings */; };
 		4B8B7F7A197EDA9D004208F6 /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B7F79197EDA9D004208F6 /* BlocstagramTests.m */; };
+		4B8B7FAA198237D2004208F6 /* BLCImagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8B7FA9198237D2004208F6 /* BLCImagesTableViewController.m */; };
+		4B8B7FCF1982F110004208F6 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FC51982F110004208F6 /* 1.jpg */; };
+		4B8B7FD01982F110004208F6 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FC61982F110004208F6 /* 2.jpg */; };
+		4B8B7FD11982F110004208F6 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FC71982F110004208F6 /* 3.jpg */; };
+		4B8B7FD21982F110004208F6 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FC81982F110004208F6 /* 4.jpg */; };
+		4B8B7FD31982F110004208F6 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FC91982F110004208F6 /* 5.jpg */; };
+		4B8B7FD41982F110004208F6 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FCA1982F110004208F6 /* 6.jpg */; };
+		4B8B7FD51982F110004208F6 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FCB1982F110004208F6 /* 7.jpg */; };
+		4B8B7FD61982F110004208F6 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FCC1982F110004208F6 /* 8.jpg */; };
+		4B8B7FD71982F110004208F6 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FCD1982F110004208F6 /* 9.jpg */; };
+		4B8B7FD81982F110004208F6 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4B8B7FCE1982F110004208F6 /* 10.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +59,18 @@
 		4B8B7F75197EDA9D004208F6 /* BlocstagramTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlocstagramTests-Info.plist"; sourceTree = "<group>"; };
 		4B8B7F77197EDA9D004208F6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B8B7F79197EDA9D004208F6 /* BlocstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramTests.m; sourceTree = "<group>"; };
+		4B8B7FA8198237D2004208F6 /* BLCImagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLCImagesTableViewController.h; sourceTree = "<group>"; };
+		4B8B7FA9198237D2004208F6 /* BLCImagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLCImagesTableViewController.m; sourceTree = "<group>"; };
+		4B8B7FC51982F110004208F6 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		4B8B7FC61982F110004208F6 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		4B8B7FC71982F110004208F6 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		4B8B7FC81982F110004208F6 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		4B8B7FC91982F110004208F6 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		4B8B7FCA1982F110004208F6 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		4B8B7FCB1982F110004208F6 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		4B8B7FCC1982F110004208F6 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		4B8B7FCD1982F110004208F6 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		4B8B7FCE1982F110004208F6 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +130,13 @@
 		4B8B7F5A197EDA9D004208F6 /* Blocstagram */ = {
 			isa = PBXGroup;
 			children = (
+				4B8B7F83198236D4004208F6 /* Images */,
 				4B8B7F63197EDA9D004208F6 /* BLCAppDelegate.h */,
 				4B8B7F64197EDA9D004208F6 /* BLCAppDelegate.m */,
 				4B8B7F66197EDA9D004208F6 /* Images.xcassets */,
 				4B8B7F5B197EDA9D004208F6 /* Supporting Files */,
+				4B8B7FA8198237D2004208F6 /* BLCImagesTableViewController.h */,
+				4B8B7FA9198237D2004208F6 /* BLCImagesTableViewController.m */,
 			);
 			path = Blocstagram;
 			sourceTree = "<group>";
@@ -142,6 +168,23 @@
 				4B8B7F76197EDA9D004208F6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4B8B7F83198236D4004208F6 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4B8B7FC51982F110004208F6 /* 1.jpg */,
+				4B8B7FC61982F110004208F6 /* 2.jpg */,
+				4B8B7FC71982F110004208F6 /* 3.jpg */,
+				4B8B7FC81982F110004208F6 /* 4.jpg */,
+				4B8B7FC91982F110004208F6 /* 5.jpg */,
+				4B8B7FCA1982F110004208F6 /* 6.jpg */,
+				4B8B7FCB1982F110004208F6 /* 7.jpg */,
+				4B8B7FCC1982F110004208F6 /* 8.jpg */,
+				4B8B7FCD1982F110004208F6 /* 9.jpg */,
+				4B8B7FCE1982F110004208F6 /* 10.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +263,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B8B7FD31982F110004208F6 /* 5.jpg in Resources */,
+				4B8B7FD11982F110004208F6 /* 3.jpg in Resources */,
+				4B8B7FD71982F110004208F6 /* 9.jpg in Resources */,
 				4B8B7F5F197EDA9D004208F6 /* InfoPlist.strings in Resources */,
+				4B8B7FD81982F110004208F6 /* 10.jpg in Resources */,
+				4B8B7FD61982F110004208F6 /* 8.jpg in Resources */,
+				4B8B7FD41982F110004208F6 /* 6.jpg in Resources */,
 				4B8B7F67197EDA9D004208F6 /* Images.xcassets in Resources */,
+				4B8B7FD01982F110004208F6 /* 2.jpg in Resources */,
+				4B8B7FD51982F110004208F6 /* 7.jpg in Resources */,
+				4B8B7FD21982F110004208F6 /* 4.jpg in Resources */,
+				4B8B7FCF1982F110004208F6 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +295,7 @@
 			files = (
 				4B8B7F65197EDA9D004208F6 /* BLCAppDelegate.m in Sources */,
 				4B8B7F61197EDA9D004208F6 /* main.m in Sources */,
+				4B8B7FAA198237D2004208F6 /* BLCImagesTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
