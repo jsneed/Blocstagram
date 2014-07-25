@@ -13,11 +13,18 @@
 
 @interface BLCDataSource ()
 
-@property (nonatomic, strong) NSArray *mediaItems;
+//@property (nonatomic, strong) NSArray *mediaItems;
+@property (nonatomic, strong) NSMutableArray *mediaItems;
 
 @end
 
 @implementation BLCDataSource
+
+- (void)removeMediaItem:(NSIndexPath *)indexPath
+{
+    BLCMedia *item = [self mediaItems][indexPath.row];
+    [self.mediaItems removeObject:item];
+}
 
 + (instancetype) sharedInstance {
     static dispatch_once_t once;
