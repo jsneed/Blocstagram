@@ -72,6 +72,7 @@
     return [BLCMediaTableViewCell heightForMediaItem:item width:CGRectGetWidth(self.view.frame)];
 }
 
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -87,6 +88,7 @@
         //remove image from array
         //BLCMedia *item = [self items][indexPath.row];
         //[self.images removeObject:image];
+        
         [[BLCDataSource sharedInstance] removeMediaItem:indexPath];
         
         // Delete the row from the data source
@@ -96,7 +98,6 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }   
 }
-
 
 /*
 // Override to support rearranging the table view.

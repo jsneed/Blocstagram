@@ -26,13 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Blocstagram/BLCImagesTableViewController.m"
-            timestampString = "428017468.650881"
+            timestampString = "428102737.999443"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "-tableView:commitEditingStyle:forRowAtIndexPath:"
-            landmarkType = "5">
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "@implementation BLCImagesTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Blocstagram/BLCMediaTableViewCell.m"
-            timestampString = "428018477.374393"
+            timestampString = "428104170.516855"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "-layoutSubviews"
             landmarkType = "5">
          </BreakpointContent>
