@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Blocstagram/BLCMediaTableViewCell.m"
-            timestampString = "428104170.516855"
+            timestampString = "428108604.781331"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "132"
+            endingLineNumber = "132"
             landmarkName = "-layoutSubviews"
             landmarkType = "5">
          </BreakpointContent>
