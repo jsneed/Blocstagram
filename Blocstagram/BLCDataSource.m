@@ -11,7 +11,9 @@
 #import "BLCMedia.h"
 #import "BLCComment.h"
 
-@interface BLCDataSource ()
+@interface BLCDataSource () {
+    NSMutableArray *_mediaItems;
+}
 
 //@property (nonatomic, strong) NSArray *mediaItems;
 @property (nonatomic, strong) NSMutableArray *mediaItems;
@@ -20,10 +22,35 @@
 
 @implementation BLCDataSource
 
-- (void)removeMediaItem:(NSIndexPath *)indexPath
-{
-    BLCMedia *item = [self mediaItems][indexPath.row];
-    [self.mediaItems removeObject:item];
+#pragma mark - Key/Value Observing
+
+- (NSUInteger) countOfMediaItems {
+    return self.mediaItems.count;
+}
+
+- (id) objectInMediaItemsAtIndex:(NSUInteger)index {
+    return [self.mediaItems objectAtIndex:index];
+}
+
+- (NSArray *) mediaItemsAtIndexes:(NSIndexSet *)indexes {
+    return [self.mediaItems objectsAtIndexes:indexes];
+}
+
+- (void) insertObject:(BLCMedia *)object inMediaItemsAtIndex:(NSUInteger)index {
+    [_mediaItems insertObject:object atIndex:index];
+}
+
+- (void) removeObjectFromMediaItemsAtIndex:(NSUInteger)index {
+    [_mediaItems removeObjectAtIndex:index];
+}
+
+- (void) replaceObjectInMediaItemsAtIndex:(NSUInteger)index withObject:(id)object {
+    [_mediaItems replaceObjectAtIndex:index withObject:object];
+}
+
+- (void) deleteMediaItem:(BLCMedia *)item {
+    NSMutableArray *mutableArrayWithKVO = [self mutableArrayValueForKey:@"mediaItems"];
+    [mutableArrayWithKVO removeObject:item];
 }
 
 + (instancetype) sharedInstance {
