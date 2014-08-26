@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
             endingLineNumber = "162"
-            landmarkName = "@implementation BLCImagesTableViewController"
-            landmarkType = "3">
+            landmarkName = "-scrollViewDidEndDecelerating:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
