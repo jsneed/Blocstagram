@@ -40,6 +40,9 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refreshControlDidFire:) forControlEvents:UIControlEventValueChanged];
+    
     [self.tableView registerClass:[BLCMediaTableViewCell class] forCellReuseIdentifier:@"mediaCell"];
 }
 
@@ -135,6 +138,28 @@
         BLCMedia *item = [BLCDataSource sharedInstance].mediaItems[indexPath.row];
         [[BLCDataSource sharedInstance] deleteMediaItem:item];
     }
+}
+
+- (void) refreshControlDidFire:(UIRefreshControl *) sender {
+    [[BLCDataSource sharedInstance] requestNewItemsWithCompletionHandler:^(NSError *error) {
+        [sender endRefreshing];
+    }];
+}
+
+- (void) infiniteScrollIfNecessary {
+    NSIndexPath *bottomIndexPath = [[self.tableView indexPathsForVisibleRows] lastObject];
+    
+    if (bottomIndexPath && bottomIndexPath.row == [BLCDataSource sharedInstance].mediaItems.count - 1) {
+        // The very last cell is on screen
+        [[BLCDataSource sharedInstance] requestOldItemsWithCompletionHandler:nil];
+    }
+}
+
+#pragma mark - UIScrollViewDelegate
+
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    [self infiniteScrollIfNecessary];
 }
 
 /*
